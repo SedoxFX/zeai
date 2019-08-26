@@ -1,0 +1,189 @@
+/*do not use code from this file. COPYRIGHT SEDOXFX */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+
+
+html {
+    background-image: url(bg1.png);
+    background-repeat: repeat;
+    background-size: 5vh;
+    animation: moving 20s linear infinite;
+    width: 50vw; height: 40vh; /*diagonal moving*/
+    
+}
+
+@keyframes moving {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 50% 100%;
+    }
+}
+
+
+
+
+
+body {
+    
+    position: absolute;
+    background: hsla(240, 1%, 20%, 0.59);
+    
+    top: 50%;
+    left: 50%;
+    padding-top: 1vh;
+    transform: translate(-50%, -50%);
+    
+    min-width: 45%;
+    max-height: 95%;
+    
+    
+    /*do a loading animation*/
+    
+}
+
+
+.main { /*main tab*/
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 4vh;
+}
+
+
+
+h1 {
+    font-size: 3vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+u {
+    text-decoration: none;
+    color: #00AEFF;
+}
+
+uo {
+    text-decoration: none;
+    color: #CCEFFF;
+}
+
+
+
+/*nav*/
+
+nav {
+    text-align: center;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    
+}
+
+nav li {
+    display: inline-block;
+    left: auto;
+    margin: 2vh;
+    position: relative;
+    text-align: center;
+}
+
+.active {
+    text-decoration: none;
+    color: #0866ff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.active:hover {
+    color: #0040ff;
+    transition: all ease-in-out 100ms;
+}
+
+.active::before {
+    content: '';
+    display: block;
+    height: 0.2vh;
+    background-color: #ffffff;
+    text-align: center;
+    
+    position: absolute;
+    width: 0;
+    text-shadow: 0px 0px 0px #000000;
+    transition: all ease-in-out 200ms;
+}
+
+.active:hover::before {
+    width: 100%;
+    
+}
+
+.inactive {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2vh;
+}
+
+/*nav end*/
+
+
+
+
+/*buttons*/
+
+.btn {
+    outline: 0px solid #0866ff;
+    text-decoration: none;
+    background: #0866ff;
+    padding: 1vh 1vh;
+    position: absolute;
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 1.7vh;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: hsla(240, 1%, 20%, 0);
+    outline-width: 4px;
+    transition: 200ms
+}
+
+
+
+
+
+
+/* video*/
+
+.video {
+    position: relative;
+    padding-bottom: 51.25%; /*ratio do not change*/
+    padding-top: 25px;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
